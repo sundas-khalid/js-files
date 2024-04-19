@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number method</title>
+    <script>
+        //number convert string into number 
+        var a = "99 ";
+        // var a=true;
+        //var a=false;
+        //var a= "99 **";
+        var num = Number(a);
+        document.write(num);
+        document.write("<br>");
+        //parseint convert  number, decimal number into integer withoutspace
+        var a = "99  88";
+        //var a= "10.5";
+        //var a="50 years";
+        //var a="salam ";
+        var num = parseInt(a);
+        document.write(num);
+        document.write("<br>");
+        //parsefloat convert  number,  number into point  value  withoutspace
+        //var a = "99  88";
+        var a = "10.5";
+        //var a="50 years";
+        //var a="salam   10lac";
+        var num = parseFloat(a);
+        document.write(num);
+        document.write("<br>");
+        //isfinite return two values(true or false)
+        var a = 100;
+        //var a=-99;
+        // var a= "10.5";
+        //var a="50 years";
+        //var a="salam ";
+        //var a= false;
+        var num = Number.isFinite(a);
+        document.write(num);
+        document.write("<br>");
+        //isinteger
+        var a = 100;
+        //var a=-99;
+        //var a= "10.5";
+        //var a="50 years";
+        //var a="salam ";
+        var num = Number.isInteger(a);
+        document.write(num);
+        document.write("<br>");
+        //tofixed
+        var a = 5.6789;
+        var num = a.toFixed(3);
+        document.write(num);
+        document.write("<br>");
+        //toPrecision
+        var a = 5.6789;
+        var num = a.toPrecision(2);
+       // var num = a.toPrecision(10);
+        document.write(num);
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

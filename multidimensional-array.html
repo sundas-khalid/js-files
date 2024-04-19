@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multidimensional array </title>
+    <script>
+        var array = [
+            ["harry", 18, "male", "B.com"],
+            ["Tom", 19, "male", "B.com"],
+            ["sunny", 17, "male", "BCA"],
+            ["jerry", 15, "male", "BCA"],
+            ["sarah", 16, "male", "B.A"]
+        ];
+        // document.write(array[0][0]);
+        // document.write(array.length);
+        document.write("<table border=1px cellspacing='0'>");
+        // for(var a=0; a<array.length; a++)
+        for (var a = 0; a < 4; a++) {
+            document.write("<tr>");
+            //for(var b=0; b<array[a].length; b++)
+            for (var b = 0; b < 4; b++) {
+                document.write("<td>" + array[a][b] + "</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table> ");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

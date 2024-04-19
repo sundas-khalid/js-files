@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string method</title>
+    <script>
+        var str = "   javascript  is   a   GREAT  is   language   ";
+        //length method
+        var a = str.length;
+        document.write(a);
+        document.write("<Br>");
+        //lowercase
+        var a = str.toLowerCase();
+        document.write(a);
+        document.write("<Br>");
+        //upercase
+        var a = str.toUpperCase();
+        document.write(a);
+        document.write("<Br>");
+        //include is used for search and is casesensitive
+        var a = str.includes("great");
+        document.write(a);
+        document.write("<Br>");
+        //startswith  used for start search  is casesensitive
+        var a = str.startsWith("javascript");
+        document.write(a);
+        document.write("<Br>");
+        //endswith  used for end search  is casesensitive
+        var a = str.endsWith("age");
+        document.write(a);
+        document.write("<Br>");
+        //search  used for search and return index position   agr value na milay to -1 return kara ga 
+        var a = str.search("age");
+        document.write(a);
+        document.write("<Br>");
+        //match " match same value "  and return array
+        var a = str.match(/a/g);
+        document.write(a);
+        document.write("<Br>"); // method for search same value 
+        //indexof  search from start and return index
+        var a = str.indexOf("is");
+        document.write(a);
+        document.write("<Br>");
+        //lastindexof  search from last and return index
+        var a = str.lastIndexOf("a");
+        document.write(a);
+        document.write("<Br>");
+        //replace
+        var a = str.replace("javascript", 'php');
+        var a = str.replace("is", "are ");
+        var a = str.replace(/is/g, "are");
+        document.write(a);
+        document.write("<Br>");
+        //trim remove space from left and right
+        var a = str.trim();
+        // alert(a);
+        document.write(a);
+        document.write("<Br>");
+        // charAt  char return kara ga
+        var a = str.charAt(3);
+        document.write(a);
+        document.write("<Br>");
+        // charCodeAt() returns the Unicode value of specified character inside a string. The method fromCharCode converts Unicode values into characters
+        var a = str.charCodeAt(3);
+        document.write(a);
+        document.write("<Br>");
+        var a = String.fromCharCode(110);
+        document.write(a);
+        document.write("<Br>");
+        //concat two string
+        var str2 = "hello";
+        var str3 = "world";
+        var a = str.concat(str2, str3);
+        document.write(a);
+        document.write("<Br>");
+        // spilt ,break the screen
+        let text = "How are you doing today?";
+        const myArray = text.split("i");
+        document.write(myArray);
+        document.write("<Br>");
+        //repeat the string
+        var a = str.repeat(3);
+        document.write(a);
+        document.write("<Br>");
+        //slice  used to add or remove elements of an existing array
+        var a = str.slice(1, 10);
+        document.write(a);
+        document.write("<Br>");
+        const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+        const citrus = fruits.slice(-3, -1);
+        document.write(citrus);
+        document.write("<Br>");
+        //substr & substring 
+        let text1 = "Hello world!";
+        let result = text1.substr(1, 4);
+        document.write(result);
+        document.write("<Br>");
+        let text2 = "Hello world!";
+        let result1 = text2.substring(1, 4);
+        document.write(result1);
+        document.write("<Br>");
+        //tostring 
+        var to = 10;
+        var tost = to.toString();
+        document.write(tost + 20);
+        document.write("<Br>");
+        //valueof
+        var a = str.valueOf();
+        document.write(a);
+        document.write("<Br>");
+
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions with return value</title>
+    <script>
+        function fullname(fname = "welcome", lname = "pakistan"){
+            var a= fname+ " " + lname;
+            return a;
+        }
+        function sum(math,eng,urdu){
+            var s=math+eng+urdu;
+            return s;
+        }
+        function percentage(tt){
+            var per=tt/300*100;
+            document.write( per);
+        }
+        var fn= fullname("ram ", " sign ");
+        document.write(fn);
+        document.write("<br>")
+        var total=sum( 80,80,80);
+       percentage(total);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

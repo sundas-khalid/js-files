@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date method </title>
+    <script>
+        var now = new Date();
+        //related to date and year methods
+        //simple date or year bati ga 
+        document.write(now.toDateString());
+        document.write("<br>");
+        // date  bati ga 
+        document.write(now.getDate());
+        document.write("<br>");
+        // year bati ga 
+        document.write(now.getFullYear());
+        document.write("<br>");
+        //month bati ga 
+        document.write(now.getMonth());
+        document.write("<br>");
+        //return 1 week day  
+        document.write(now.getDay());
+        document.write("<br>");
+        //past  ki  bi  date or time  mention karna ka liya bi yahi methods use hon gy object ma parameter pass ker ky
+        // related to time methods
+        //hours bati ga 
+        document.write(now.getHours());
+        document.write("<br>");
+        //mints bati ga 
+        document.write(now.getMinutes());
+        document.write("<br>");
+        //second bati ga 
+        document.write(now.getSeconds());
+        document.write("<br>");
+        //miliseconds bati ga 
+        document.write(now.getMilliseconds());
+        document.write("<br>");
+        //set date and time 
+        //date  bati ga 
+        now.setDate(8);
+        document.write(now);
+        document.write("<br>");
+        //year  bati ga 
+        now.setFullYear(2024);
+        document.write(now);
+        document.write("<br>");
+        //month  bati ga 
+        now.setMonth(4);
+        document.write(now);
+        document.write("<br>");
+        //hours  bati ga 
+        now.setHours(14);
+        document.write(now);
+        document.write("<br>");
+        //real time date 
+        document.write(now.getDate() + "/ " + now.getMonth() + " /" + now.getFullYear());
+        document.write("<br>");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

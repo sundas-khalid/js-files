@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <script>
+        var array = [50, 53, 39, 77];
+        var b = ["hey!", "salam", "hello"];
+        var d = new Array(3);
+        var sum = 0;
+        document.write(array);
+        document.write("<br>");
+        document.write(array[2]);
+        document.write("<br>");
+        document.write(array[5]);
+        document.write("<br>");
+        for (var a = 0; a <= 4; a++) {
+            document.write(array[a] + "<br>");
+        }
+        document.write("<ul>");
+        for (var a = 0; a <= 3; a++) {
+            document.write("<li>" + array[a] + "</li>");
+            sum = sum + array[a];
+        }
+        document.write("</ul>");
+        document.write("Total Sum:" + sum);
+        document.write("<br>");
+        for (var a = 0; a <= 4; a++) {
+            document.write(b[a] + "<br>");
+        }
+        document.write("<br>");
+        //for create new array
+        var arry = new Array();
+        arry[0] = 10;
+        arry[1] = "salam";
+        arry[2] = "harry";
+        for (var a = 0; a <= 2; a++) {
+            document.write(arry[a] + "<br>");
+        }
+        document.write("<br>");
+        //for dynamic create 
+        for (var g = 0; g < 3; g++) {
+            d[g] = prompt("Enter value :");
+        }
+        for (var a = 0; a < 3; a++) {
+            document.write(d[a] + "<br>");
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

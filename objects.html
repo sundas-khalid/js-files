@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+    <script>
+        var a = {
+            fname: 'yahho',
+            lname: 'baba',
+            age: 25,
+            email: "hello@yahobaba.net",
+            favmov: ["jannat", "nekki", "hadayat"],
+            //object ka ander object
+            living: {
+                'city': 'gujranwala',
+                'country': 'pakistan'
+            },
+            salary: function () {
+                return 250000;
+            },
+            fullname: function () {
+                return this.fname + " " + this.lname;
+            }
+        }
+        document.write(a);
+        document.write(a.fname + "<br>");
+        document.write(a.favmov + "<br>");
+        document.write(a.favmov[2] + "<br>");
+        document.write(a.salary() + "<br>");
+        document.write(a.fullname() + "<br>");
+        document.write(a.living.city + "<br>");
+        console.log(a);
+        //for specific variable
+        console.log(a.fname);
+        document.write("<br>");
+        //advance method
+        var person = new Object();
+        person.fname = 'musa';
+        person.lname = 'usman';
+        person.age = 12;
+        console.log(person);
+        document.write(person.age + "<br>");
+        document.write(person['fname']);
+        document.write("<br><br>");
+        //array of object
+        var student = [
+            { name: 'ram', age: 15 },
+            { name: 'rahul', age: 14 },
+            { name: 'ramza', age: 13 },
+        ];
+        console.log(student);
+        for (var a = 0; a < student.length; a++) {
+            document.write(student[a].name + " " + student[a].age + "<br>");
+        }
+        document.write("<br><br>");
+        //for in loop
+        var a = {
+            fname: 'yahho',
+            lname: 'baba',
+            age: 25,
+            email: "hello@yahobaba.net",
+            favmov: ["jannat", "nekki", "hadayat"]
+        };
+        for (var key in a) {
+            document.write( key + ": " + a[key] + "<br>");
+        }    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

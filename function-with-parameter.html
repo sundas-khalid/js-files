@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function with parameter</title>
+    <script>
+        //pass parameter
+        function hello(fname, lname) {
+            document.write("Hello " + fname + " " + lname);
+        }
+        //pass parameters value in function
+        function welcome(fname = "welcome", lname = "pakistan") {
+            document.write("Hello" + " " + fname + " " + lname + "<br>");
+        }
+        function sum() {
+            document.write(15 + 15);
+        }
+        //2nd method
+        function sum1(a, b) {
+            document.write(a + b + "<br>");
+        }
+        hello("yahoo ", "baba ");
+        document.write("<br>");
+        hello("yahoo");
+        document.write("<br>");
+        hello();
+        document.write("<br>");
+        welcome();
+        //overwite value
+        welcome("salman", "khan");
+        welcome("ram", "sign");
+        document.write("<br>");
+        sum();
+        document.write("<br>");
+        sum1(16, 16);
+        sum1(30, 30);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

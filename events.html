@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script>
+       function hello(){
+        document.write("Hello Everyone");
+        alert("Hello Everyone");
+       } 
+    </script>
+</head> 
+<!--window events ,work in body tag-->
+<body   onkeypress="hello()" 
+        onresize="hello()"
+        onscroll="hello()" >
+     <button onclick="hello()">click me</button>
+     <button ondblclick="hello()">click on me</button> 
+     <!--for right click-->
+     <p oncontextmenu="hello()">click here</p> 
+      <!--for on  click-->
+     <p onmouseenter="hello()">click here</p>
+      <!--for out  click-->
+     <p onmouseout="hello()">click here</p>
+      <!--work like click event -->
+      <p onmousedown="hello()">click</p>
+       <!-- click agr  na kara -->
+       <p onmouseup="hello()">click on me </p>
+        <!--for keyboard typing form ya body tag ma work kara ga -->
+        <p>click</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolore atque, aliquam in sed perspiciatis aut voluptatem doloremque commodi vitae porro, error accusantium nostrum neque totam! Cum velit voluptas culpa!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolore atque, aliquam in sed perspiciatis aut voluptatem doloremque commodi vitae porro, error accusantium nostrum neque totam! Cum velit voluptas culpa!
+        </p>
+</body>
+</html>
